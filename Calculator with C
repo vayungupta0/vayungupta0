@@ -1,0 +1,63 @@
+#include<stdio.h>
+main(){
+	float x,y,result;
+	int operat;
+	
+	while (true)
+	{
+		printf("\n------------------------------------NEW------------------------------------\n");
+		printf("\n1)Addition\n2)Subtraction\n3)Multiplication\n4)Division\n5)Quit\n");
+		printf("\nEnter a Valid number from the options : ");
+		scanf("%d",&operat);	
+		if (operat==1){
+			
+			printf("Enter a first value : ");
+			scanf("%f",&x);
+			printf("Enter a second value : ");
+			scanf("%f",&y);
+			
+			result = x+y;
+			printf("The result is %.2f",result);
+		}
+		else if (operat==2){
+			
+			printf("Enter a first value : ");
+			scanf("%f",&x);
+			printf("Enter a second value : ");
+			scanf("%f",&y);
+		
+			result = x-y;
+			printf("The result is %.2f",result);
+		}
+		else if (operat==3){
+			
+			printf("Enter a first value : ");
+			scanf("%f",&x);
+			printf("Enter a second value : ");
+			scanf("%f",&y);
+			
+			result = x*y;
+			printf("The result is %.2f",result);
+		}
+		else if (operat==4){
+			
+			printf("Enter a first value : ");
+			scanf("%f",&x);
+			printf("Enter a second value : ");
+			scanf("%f",&y);
+			
+			result = x/y;
+			printf("The result is %.2f",result);
+		}
+		else if(operat>=0){
+			printf("Enter a Valid Option!!");
+		}
+		else if(operat==5){
+			printf("Thanks For Using");
+			break;
+		}
+		else if(operat>=6){
+			printf("Enter a Valid Option!!");
+		}
+	}
+}
